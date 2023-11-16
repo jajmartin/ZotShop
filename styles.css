@@ -16,3 +16,16 @@ body {
 h1 {
     color: #007BFF;
 }
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0064a4;
+    color: #ffd200;
+    height: 50px;
+}
+
+.navbarItem {
+
+}
