@@ -1,0 +1,102 @@
+html,
+body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('login_bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.5); /* Adjust transparency here (0.5 is 50% opacity) */
+    }
+}
+
+.blue-text {
+    color: #0064a4;
+}
+
+.gold-text {
+    color: #ffd200;
+}
+
+#login-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#login-header {
+    font-size: 8em;
+    font-weight: lighter;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+#login-subheader {
+    margin-top: 0;
+    font-size: 3em;
+    font-weight: lighter;
+    z-index: 1;
+}
+
+#login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    border: 3px solid #0064a4; /* Border color */
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px; /* Padding inside the border */
+    font-size: 2em;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#email-field,
+#password-field,
+#login-form-submit {
+    width: 90%; /* Adjust width as needed */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 15px; /* Add some space between form fields */
+    border: 1px solid #ccc; /* Border color for inputs */
+    border-radius: 25px; /* Rounded corners for inputs */
+    font-size: 16px;
+}
+
+#login-form-submit {
+    width: 20%;
+    background-color: #0064a4;
+    color: white;
+    cursor: pointer; /* Show pointer on hover to indicate clickable */
+    &:hover {
+        background-color: #295180; /* Darker color on hover */
+    }
+    &:active {
+        background-color: #1b3d6d; /* Even darker color when pressed */
+    }
+}
+
+.error-message {
+    color: red;
+    display: none;
+    font-size: 50%;
+}
