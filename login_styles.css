@@ -7,7 +7,7 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('login_bg.jpeg');
+    background-image: url('img/login_bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     &:before {
