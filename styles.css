@@ -63,3 +63,15 @@ h1 {
     background: url('dollar-sign.png');
     cursor: pointer;
 }
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0064a4;
+    color: #ffd200;
+    height: 50px;
+}
+
+.navbarItem {
+}
