@@ -10,3 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
         output.innerHTML = this.value;
     };
 })
+
+slider.oninput = function () {
+    output.innerHTML = this.value;
+};
+
+
+
+
+
+
