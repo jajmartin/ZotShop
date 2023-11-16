@@ -29,6 +29,6 @@ function createNavbar () {
     document.body.prepend(navbar);
 }
 
-window.onload = (event) => {
-    createNavbar();
-};
+document.addEventListener('DOMContentLoaded', function () {
+    createNavbar()
+})
