@@ -15,7 +15,9 @@ let navItems = [
     },
     ]
 
-function createNavbar (navbar) {
+function createNavbar () {
+    let navbar = document.createElement('div');
+    navbar.id = 'navbar';
     for(let item of navItems)
     {
         let navbarItem = document.createElement('a');
@@ -24,8 +26,9 @@ function createNavbar (navbar) {
         navbarItem.href = item.link;
         navbar.appendChild(navbarItem);
     }
+    document.body.prepend(navbar);
 }
 
 window.onload = (event) => {
-    createNavbar(document.getElementById('navbar'));
+    createNavbar();
 };
