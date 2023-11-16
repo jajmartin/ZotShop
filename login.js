@@ -35,7 +35,6 @@ function loginProcess() {
 
     if (valid) {
         console.log('Login successful for email:', email);
-        // Perform login logic here
     }
 
     return valid;
@@ -44,7 +43,7 @@ function loginProcess() {
 loginButton.addEventListener('click', function(event) {
     event.preventDefault();
     if (loginProcess()) {
-        // Proceed with login if validation succeeds
+        window.location.href = 'buy.html';
     }
 });
 
@@ -61,5 +60,3 @@ passwordField.addEventListener('input', function() {
         passwordError.style.display = 'none';
     }
 });
-
-

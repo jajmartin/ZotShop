@@ -53,14 +53,14 @@ h1 {
     appearance: none;
     width: 40px;
     height: 50px;
-    background: url('dollar-sign.png');
+    background: url('img/dollar-sign.png');
     cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
     width: 40px;
     height: 50px;
-    background: url('dollar-sign.png');
+    background: url('img/dollar-sign.png');
     cursor: pointer;
 }
 
