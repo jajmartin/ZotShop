@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Web App</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -32,14 +33,54 @@
 
 <div class="slidecontainer">
 
-    <div text align="left"> Maximum Price </div>
+
     <br>
-    <input type="range" min="1" max="100" value="50" class="slider" id="range">
-    <div text align="left">Value:<span id="value">50</span> </div>
+    <input type="range" min="1" max="500" value="100" class="slider" id="range">
+    <div text align="left">Maximum Price: <span id="value">50</span> </div>
 
 
 </div>
+<br>
+<br>
+<div text align="left"> Condition </div>
+<div class="dropdowncontainer" text align="left">
+
+    <select id="condition">
+        <option value="allcondition"> All </option>
+        <option value="new"> New </option>
+        <option value="barelyused"> Barely Used </option>
+        <option value="used"> Used</option>
+    </select>
+</div>
 
 
+<div text align="left"> Location </div>
+<div class="dropdowncontainer" text align="left">
+
+    <select id="location">
+        <option value="alllocation"> All </option>
+        <option value="dorms"> On campus (dorms) </option>
+        <option value="acc"> On campus (apartments) </option>
+        <option value="utc"> Off campus (Irvine)</option>
+        <option value="city"> Off campus (outside Irvine)</option>
+    </select>
+</div>
+
+<div text align="left"> Payment Method </div>
+<div class="dropdowncontainer" text align="left">
+
+    <select id="condition">
+        <option value="allpayment"> All </option>
+        <option value="cash"> Cash </option>
+        <option value="venmo"> Venmo </option>
+        <option value="zelle"> Zelle</option>
+        <option value="other"> Other</option>
+
+    </select>
+</div>
+<div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Type item name">
+    <button onclick="performSearch()" class="search-button">Search</button>
+</div>
 
 </html>
