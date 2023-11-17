@@ -8,19 +8,19 @@
     <title>Your Web App</title>
     <link rel="stylesheet" href="styles.css">
     <script src="buy.js"></script>
+    <script src="listings.js"></script>
+    <script src="helper_scripts/listingCards.js"></script>
+
 </head>
 
 
 <body>
 
-
-
-
-</body>
-<div class="search-container">
-    <input type="text" id="searchInput" class="search-input" placeholder="Type item name">
-    <button onclick="performSearch()" class="search-button">Search</button>
+<div class="search-form">
+    <input type="text" id="searchInput" class="search-input" placeholder="Type item name" name="searchString">
+    <button id="search-button">Search</button>
 </div>
+<div class="search-container">
 <div class="filtercard">
     <div class="filter">
 
@@ -85,60 +85,63 @@
             </select>
             <br>
             <br>
-            <button onclick="performSearch()" class="search-button">Search</button>
+            <button class="search-button" id="filter-button">Search</button>
 
 
         </div>
     </div>
 
-    <div class="card">
-        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
-        <div class="container">
-            <h2 align="left"> UC Irvine Umbrella </h2>
-            <h4 align="left"> $10 </h4>
-            <h4 align="left"> On campus(dorms)</h4>
-            <!-- <h5> Negotiable </h5>
-        <h5> New</h5>
-       
-        <h5> Venmo </h5>
-        <h5> ijena</h5>
-        -->
-        </div>
-    </div>
-    <div class="card">
-        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
-        <div class="container">
-            <h2 align="left"> UC Irvine Umbrella </h2>
-            <h4 align="left"> $10 </h4>
-            <h4 align="left"> On campus(dorms)</h4>
-            <!-- <h5> Negotiable </h5>
-        <h5> New</h5>
-       
-        <h5> Venmo </h5>
-        <h5> ijena</h5>
-        -->
-        </div>
-    </div>
-    <div class="card">
-        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
-        <div class="container">
-            <h2 align="left"> UC Irvine Umbrella </h2>
-            <h4 align="left"> $10 </h4>
-            <h4 align="left"> On campus(dorms)</h4>
-            <!-- <h5> Negotiable </h5>
-        <h5> New</h5>
-       
-        <h5> Venmo </h5>
-        <h5> ijena</h5>
-        -->
-        </div>
-    </div>
+<!--    <div class="card">-->
+<!--        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>-->
+<!--        <div class="container">-->
+<!--            <h2 align="left"> UC Irvine Umbrella </h2>-->
+<!--            <h4 align="left"> $10 </h4>-->
+<!--            <h4 align="left"> On campus(dorms)</h4>-->
+<!--            &lt;!&ndash; <h5> Negotiable </h5>-->
+<!--        <h5> New</h5>-->
 
+<<<<<<< HEAD
 </div>
 
 
+=======
+<!--        <h5> Venmo </h5>-->
+<!--        <h5> ijena</h5>-->
+<!--        &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="card">-->
+<!--        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>-->
+<!--        <div class="container">-->
+<!--            <h2 align="left"> UC Irvine Umbrella </h2>-->
+<!--            <h4 align="left"> $10 </h4>-->
+<!--            <h4 align="left"> On campus(dorms)</h4>-->
+<!--            &lt;!&ndash; <h5> Negotiable </h5>-->
+<!--        <h5> New</h5>-->
+>>>>>>> 9a1e3db63f42b7d09c57f72550b0459ac124cdd4
 
+<!--        <h5> Venmo </h5>-->
+<!--        <h5> ijena</h5>-->
+<!--        &ndash;&gt;-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="card">-->
+<!--        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>-->
+<!--        <div class="container">-->
+<!--            <h2 align="left"> UC Irvine Umbrella </h2>-->
+<!--            <h4 align="left"> $10 </h4>-->
+<!--            <h4 align="left"> On campus(dorms)</h4>-->
+<!--            &lt;!&ndash; <h5> Negotiable </h5>-->
+<!--        <h5> New</h5>-->
 
+<!--        <h5> Venmo </h5>-->
+<!--        <h5> ijena</h5>-->
+<!--        &ndash;&gt;-->
+<!--        </div>-->
+    </div>
+    <div id="searchResultsContainer"></div>
+</div>
+</body>
 
 
 

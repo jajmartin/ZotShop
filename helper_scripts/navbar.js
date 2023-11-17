@@ -3,10 +3,12 @@ let navItems = [
         'link': 'index.html'
     },
     {   'name':'Buy',
+        'link': 'buy.html'
     },
     {   'name':'Bids',
     },
     {   'name':'Sell',
+        'link':'indexSell.html'
     },
     {   'name':'Messages',
     },
