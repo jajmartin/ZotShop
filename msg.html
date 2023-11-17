@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZotShop Messages</title>
+    <link rel="stylesheet" href="msg_styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="#bid.html">Biddings</a></li>
+          <li><a href="#indexSell.html">Sell</a></li>
+          <li id="current"><a href="msg.html">Messages</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="chat-list">
+                <div class="chat" data-chat="1" data-name="Peter Anteater">Peter Anteater</div>
+                <div class="chat" data-chat="2" data-name="Elon Musk">Elon Musk</div>
+                <!-- Add more chat sections as needed -->
+            </div>
+        </div>
+        <div class="main">
+            <div class="chat-window" id="chat-window" data-chat="1">
+                <div class="chat-header" id="chat-header">Selected Chat</div>
+                <hr class="separator-line">
+                <div class="conversation" id="conversation">
+                    <div class="message sent">
+                        <div class="message-body">Hi, is the price for your Apple Pencil negotiable?</div>
+                    </div>
+                    <div class="message received">
+                        <div class="message-body">Yes, what's your best offer?</div>
+                    </div>
+                    <!-- Repeat the above structure for messages -->
+                </div>
+                <div class="message-input">
+                    <input type="text" class="message-input-field" placeholder="Type a message...">
+                    <button class="send-button">Send</button>
+                </div>
+            </div>
+            <div class="chat-window" id="chat-window" data-chat="2">
+                <div class="chat-header" id="chat-header">Elon Musk</div>
+                <hr class="separator-line">
+                <div class="conversation" id="conversation">
+                    <div class="message sent">
+                        <div class="message-body">Is this really Elon Musk?</div>
+                    </div>
+                    <div class="message received">
+                        <div class="message-body">buy tesla stonks</div>
+                    </div>
+                    <!-- Repeat the above structure for messages -->
+                </div>
+                <div class="message-input">
+                    <input type="text" class="message-input-field" placeholder="Type a message...">
+                    <button class="send-button">Send</button>
+                </div>
+                <div class="placeholder-text">Select a chat to start messaging.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="msg.js"></script>
+</body>
+
+</html>
