@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.body.append(createListingCards([0]));
+    document.getElementById('newestBuyContainer').append(createBuyListingsContainer(0, 5));
 })

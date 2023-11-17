@@ -1,0 +1,29 @@
+#newestBuyContainer{
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+.listingsContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    gap: 30px 50px;
+    margin: 10px;
+}
+
+.listingCard {
+    width: 200px;
+    height: 290px;
+}
+
+.listingImg {
+    width: 100%;
+    height: auto;
+    max-height: 75%;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}

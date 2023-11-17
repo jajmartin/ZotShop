@@ -1,9 +1,5 @@
-function getListing(index) {
-    return listings[index]
-}
-
 function createListingCard(index) {
-    let listing = getListing(index)
+    let listing = listings[index]
 
     let name = document.createElement('h2');
     name.innerText = listing.name;
@@ -14,6 +10,7 @@ function createListingCard(index) {
     let img = document.createElement('img');
     img.src = listing.img;
     img.alt = 'item'
+    img.className = 'listingImg'
 
     let card = document.createElement('div');
     card.className = 'listingCard';
@@ -21,13 +18,23 @@ function createListingCard(index) {
     return card;
 }
 
-function createListingCards(indexArray) {
-    let listings = document.createElement('div');
-    listings.className = "listingCardsContainer"
+function createListingsContainer(start, end, type) {
+    let listingsContainer = document.createElement('div');
+    listingsContainer.className = "listingsContainer"
 
-    for(let index in indexArray) {
-        listings.append(createListingCard(index));
+    for(let i = start; i < end; ++i) {
+        if(listings[i]['type'] === type) {
+            listingsContainer.append(createListingCard(i));
+        }
     }
 
-    return listings;
+    return listingsContainer;
+}
+
+function createBuyListingsContainer(start, end) {
+    return createListingsContainer(start, end, 'buy');
+}
+
+function createBidListingsContainer(start, end) {
+    return createListingsContainer(start, end, 'bid');
 }
