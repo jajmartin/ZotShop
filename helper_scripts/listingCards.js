@@ -4,9 +4,7 @@ function createListingCard(index) {
     let name = document.createElement('h2');
     name.innerText = listing.name;
     let price = document.createElement('h4');
-    price.innerText = listing.price;
-    let location = document.createElement('h4');
-    location.innerText = listing.location;
+    price.innerText = "$" + listing.price;
     let img = document.createElement('img');
     img.src = listing.img;
     img.alt = 'item'
@@ -14,7 +12,7 @@ function createListingCard(index) {
 
     let card = document.createElement('div');
     card.className = 'listingCard';
-    card.append(img, name, price, location);
+    card.append(img, name, price);
     return card;
 }
 
