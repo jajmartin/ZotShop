@@ -157,7 +157,7 @@ select {
     border-radius: 15px;
 }
 
-#searchResults {
+#searchResultsContainer {
     display: flex;
     flex-flow: wrap;
     justify-content: flex-start;

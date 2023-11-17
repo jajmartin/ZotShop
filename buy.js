@@ -1,8 +1,9 @@
+let searchResults;
 function searchListings(searchString) {
-    let searchPattern = new RegExp(searchString.toLowerCase());
-    return listings.filter((listing) => {
+    searchResults = listings.filter((listing) => {
         return listing['name'].toLowerCase().includes(searchString.toLowerCase());
     })
+    return searchResults;
 }
 
 function populateSearch(searchString) {
@@ -10,8 +11,8 @@ function populateSearch(searchString) {
 }
 
 function clearSearchResults() {
-    while (document.getElementById("searchResults").lastElementChild) {
-        document.getElementById("searchResults").removeChild(document.getElementById("searchResults").lastElementChild);
+    while (document.getElementById("searchResultsContainer").lastElementChild) {
+        document.getElementById("searchResultsContainer").removeChild(document.getElementById("searchResultsContainer").lastElementChild);
     }
 }
 
@@ -25,12 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     slider.oninput = function () {
         output.innerHTML = this.value;
+        let matchedListings = searchResults.filter((listing) => {
+            return listing['price'] <= this.value;
+        })
+        clearSearchResults();
+        document.getElementById("searchResultsContainer").append(createListingsContainer(matchedListings));
     };
 
     document.getElementById("search-button").addEventListener('click', () => {
         let searchString = document.getElementById("searchInput").value;
         clearSearchResults();
-        document.getElementById("searchResults").append(populateSearch(searchString))
+        document.getElementById("searchResultsContainer").append(populateSearch(searchString))
     });
 })
 
