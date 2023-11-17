@@ -33,7 +33,7 @@ h1 {
 }
 
 .slidecontainer {
-    width: 17%;
+    width: 100%;
 }
 
 .slider {
@@ -75,4 +75,52 @@ h1 {
 .navbarItem {
     color: #ffd200;
     text-decoration: none;
+}
+
+.dropdown-container {
+    width: 100%;
+    align-items: left;
+    text-align: left;
+    border-radius: 15px;
+
+}
+
+
+select {
+    align-items: left;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 15px;
+}
+
+
+.search-container {
+    text-align: center;
+    margin: 50px;
+}
+
+
+/* Styles for the search input */
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+
+/* Styles for the search button (optional) */
+.search-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.filter {
+    align-items: left;
+    width: 17%;
+
 }
