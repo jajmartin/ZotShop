@@ -1,4 +1,5 @@
 let searchResults;
+
 function searchListings(searchString) {
     searchResults = listings.filter((listing) => {
         return listing['name'].toLowerCase().includes(searchString.toLowerCase());
@@ -23,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var slider = document.getElementById("range");
     var output = document.getElementById("value");
     output.innerHTML = slider.value;
+
+    searchResults = listings.filter(listing => listing['type'] === 'buy');
+    document.getElementById("searchResultsContainer").append(createListingsContainer(searchResults));
 
     slider.oninput = function () {
         output.innerHTML = this.value;
