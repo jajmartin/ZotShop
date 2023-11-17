@@ -9,6 +9,12 @@ function populateSearch(searchString) {
     return createListingsContainer(searchListings(searchString));
 }
 
+function clearSearchResults() {
+    while (document.getElementById("searchResults").lastElementChild) {
+        document.getElementById("searchResults").removeChild(document.getElementById("searchResults").lastElementChild);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Execute code after the DOM is fully loaded
     console.log('DOM Loaded');
@@ -23,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById("search-button").addEventListener('click', () => {
         let searchString = document.getElementById("searchInput").value;
+        clearSearchResults();
         document.getElementById("searchResults").append(populateSearch(searchString))
     });
 })
