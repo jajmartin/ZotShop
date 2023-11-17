@@ -1,86 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Web App</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="buy.js"></script>
 </head>
+
 
 <body>
 
 
+
+
 </body>
-
-<div class="card">
-    <img src="ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
-    <div class="container">
-        <h2 align="left"> UC Irvine Umbrella </h2>
-        <h4 align="left"> $10 </h4>
-        <h4 align="left"> On campus(dorms)</h4>
-        <!-- <h5> Negotiable </h5>
-        <h5> New</h5>
-        
-        <h5> Venmo </h5>
-        <h5> ijena</h5>
-        -->
-    </div>
-</div>
-<br>
-<br>
-
-<div class="slidecontainer">
-
-
-    <br>
-    <input type="range" min="1" max="500" value="100" class="slider" id="range">
-    <div text align="left">Maximum Price: <span id="value">50</span> </div>
-
-
-</div>
-<br>
-<br>
-<div text align="left"> Condition </div>
-<div class="dropdowncontainer" text align="left">
-
-    <select id="condition">
-        <option value="allcondition"> All </option>
-        <option value="new"> New </option>
-        <option value="barelyused"> Barely Used </option>
-        <option value="used"> Used</option>
-    </select>
-</div>
-
-
-<div text align="left"> Location </div>
-<div class="dropdowncontainer" text align="left">
-
-    <select id="location">
-        <option value="alllocation"> All </option>
-        <option value="dorms"> On campus (dorms) </option>
-        <option value="acc"> On campus (apartments) </option>
-        <option value="utc"> Off campus (Irvine)</option>
-        <option value="city"> Off campus (outside Irvine)</option>
-    </select>
-</div>
-
-<div text align="left"> Payment Method </div>
-<div class="dropdowncontainer" text align="left">
-
-    <select id="condition">
-        <option value="allpayment"> All </option>
-        <option value="cash"> Cash </option>
-        <option value="venmo"> Venmo </option>
-        <option value="zelle"> Zelle</option>
-        <option value="other"> Other</option>
-
-    </select>
-</div>
 <div class="search-container">
     <input type="text" id="searchInput" class="search-input" placeholder="Type item name">
     <button onclick="performSearch()" class="search-button">Search</button>
 </div>
+<div class="filtercard">
+    <div class="filter">
+
+        <h2> Filters <img src="img/filter-symbol.png" alt="Funnel Icon" width="25 px"> </h2>
+        <div class=" slidecontainer">
+
+
+
+
+            <br>
+            <div text align="left">Maximum Price</div>
+            <input type="range" min="1" max="500" value="100" class="slider" id="range">
+            <div text align="left">$<span id="value">100</span> </div>
+
+
+
+
+        </div>
+        <br>
+        <br>
+        <div text align="left"> Condition </div>
+        <div class="dropdown-container" text align="left">
+
+
+            <select id="condition">
+                <option value="allcondition"> All </option>
+                <option value="new"> New </option>
+                <option value="barelyused"> Barely Used </option>
+                <option value="used"> Used</option>
+            </select>
+        </div>
+
+
+
+
+        <div text align="left"> Location </div>
+        <div class="dropdown-container">
+
+
+            <select id="location">
+                <option value="alllocation"> All </option>
+                <option value="dorms"> On campus (dorms) </option>
+                <option value="acc"> On campus (apartments) </option>
+                <option value="utc"> Off campus (Irvine)</option>
+                <option value="city"> Off campus (outside Irvine)</option>
+            </select>
+        </div>
+
+
+        <div text align="left"> Payment Method </div>
+        <div class="dropdown-container" text align="left">
+
+
+            <select id="condition">
+                <option value="allpayment"> All </option>
+                <option value="cash"> Cash </option>
+                <option value="venmo"> Venmo </option>
+                <option value="zelle"> Zelle</option>
+                <option value="other"> Other</option>
+
+
+            </select>
+            <br>
+            <br>
+            <button onclick="performSearch()" class="search-button">Search</button>
+
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
+        <div class="container">
+            <h2 align="left"> UC Irvine Umbrella </h2>
+            <h4 align="left"> $10 </h4>
+            <h4 align="left"> On campus(dorms)</h4>
+            <!-- <h5> Negotiable </h5>
+        <h5> New</h5>
+       
+        <h5> Venmo </h5>
+        <h5> ijena</h5>
+        -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
+        <div class="container">
+            <h2 align="left"> UC Irvine Umbrella </h2>
+            <h4 align="left"> $10 </h4>
+            <h4 align="left"> On campus(dorms)</h4>
+            <!-- <h5> Negotiable </h5>
+        <h5> New</h5>
+       
+        <h5> Venmo </h5>
+        <h5> ijena</h5>
+        -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
+        <div class="container">
+            <h2 align="left"> UC Irvine Umbrella </h2>
+            <h4 align="left"> $10 </h4>
+            <h4 align="left"> On campus(dorms)</h4>
+            <!-- <h5> Negotiable </h5>
+        <h5> New</h5>
+       
+        <h5> Venmo </h5>
+        <h5> ijena</h5>
+        -->
+        </div>
+    </div>
+
+
+
+
+
+
 
 </html>
