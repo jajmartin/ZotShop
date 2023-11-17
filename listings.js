@@ -7,6 +7,20 @@ const listings = [
     "type": "buy"
   },
   {
+    "name": "UC Irvine Umbrella",
+    "price": 10,
+    "location": "On campus(dorms)",
+    "img": "img/ZotShop_umbrella.jpg",
+    "type": "buy"
+  },
+  {
+    "name": "UC Irvine Umbrella",
+    "price": 10,
+    "location": "On campus(dorms)",
+    "img": "img/ZotShop_umbrella.jpg",
+    "type": "buy"
+  },
+  {
     "name": "Electric Scooter",
     "price": 120,
     "location": "",

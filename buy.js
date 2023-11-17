@@ -1,7 +1,7 @@
 function searchListings(searchString) {
     let searchPattern = new RegExp(searchString.toLowerCase());
     return listings.filter((listing) => {
-        return !listing['name'].toLowerCase().search(searchString.toLowerCase());
+        return listing['name'].toLowerCase().includes(searchString.toLowerCase());
     })
 }
 

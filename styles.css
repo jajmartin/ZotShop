@@ -160,10 +160,9 @@ select {
 #searchResults {
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 30px 50px;
     margin: 10px;
-    width: 50%;
 }
 
 .listingCard {
@@ -172,6 +171,7 @@ select {
     width: 250px;
     height: 300px;
     margin-left: 5%;
+    margin-bottom: 5%;
     float: inline-start;
     line-height: 5px;
 }
