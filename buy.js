@@ -39,4 +39,3 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("searchResultsContainer").append(populateSearch(searchString))
     });
 })
-
