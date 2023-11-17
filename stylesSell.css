@@ -173,13 +173,13 @@ button#editItem {
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     /* flex-direction: column; */
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 
 .modal-content {
-    
+    display: none;
     background-color: white; /* update the colors and font sizes as you like */
     color: black;
     text-align: center;
@@ -192,14 +192,14 @@ button#editItem {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
     /* align-items: center; */
 }
 
-.modal-content #inputGroup {
+.modal-content .inputGroup {
     display: flex;
     flex-direction: row;
     align-items: center;

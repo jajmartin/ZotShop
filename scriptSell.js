@@ -17,13 +17,13 @@ function openEditModal(clickedButton) {
     // Show the modal
     document.getElementById('editModal').style.display = 'block';
     document.querySelector('.modal-content').style.display = 'flex';
-    document.querySelector('.modal-content #inputGroup').style.display = "flex";
+    // document.querySelector('.modal-content #inputGroup').style.display = "flex";
 }
 
 function closeEditModal() {
     document.getElementById('editModal').style.display = 'none';
     document.querySelector('.modal-content').style.display = 'none';
-    document.querySelector('.modal-content #inputGroup').style.display = "none";
+    // document.querySelector('.modal-content #inputGroup').style.display = "none";
 }
 
 function saveChanges() {
