@@ -9,4 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.oninput = function () {
         output.innerHTML = this.value;
     };
+
+
 })
+

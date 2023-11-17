@@ -20,7 +20,11 @@ h1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 250px;
-    height: 300px
+    height: 300px;
+    margin-left: 5%;
+    float: inline-start;
+    line-height: 5px;
+
 }
 
 .card:hover {
@@ -106,7 +110,7 @@ select {
 .search-input {
     padding: 10px;
     font-size: 16px;
-    width: 200px;
+    width: 350px;
     border-radius: 15px;
 }
 
@@ -121,6 +125,33 @@ select {
 
 .filter {
     align-items: left;
-    width: 17%;
+    width: 25%;
+    background-color: #1295D8;
+    height: 1000px;
+}
 
+.filtercard {
+    display: flex;
+}
+
+.bid-container {
+    text-align: center;
+
+}
+
+
+
+.bid-input {
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 15px;
+}
+
+
+.bid-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
 }
