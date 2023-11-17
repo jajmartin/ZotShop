@@ -11,10 +11,23 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 
-<<<<<<< HEAD
-    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
+})
+function enterBid(inputID, outputID, errorID) {
+    if (parseFloat(document.getElementById(inputID).value) <= parseFloat(document.getElementById(outputID).innerHTML)) {
+        document.getElementById(errorID).innerHTML = "Invalid bid amount"
+    }
+    else {
+        document.getElementById(outputID).innerHTML = document.getElementById(inputID).value
+        document.getElementById(errorID).innerHTML = ""
+    }
+
+}
+
+
+function countDown(id, date) {
     // Update the count down every 1 second
+    var countDownDate = new Date(date).getTime();
     var x = setInterval(function () {
 
         // Get today's date and time
@@ -30,18 +43,15 @@ document.addEventListener('DOMContentLoaded', function () {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        document.getElementById(id).innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
         // If the count down is over, write some text 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById(id).innerHTML = "EXPIRED";
         }
-    }, 1000);
-=======
-
->>>>>>> e5f3ad86689d8731a6aafcb0f85a56e43e3e4300
-
-})
+    }
+        , 1000);
+}
 
