@@ -39,6 +39,6 @@ const listings = [
     "price": 30,
     "location": "",
     "img": "sellPictures/iClicker2.jpg",
-    "type": "buy"
+    "type": "bid"
   },
 ]
