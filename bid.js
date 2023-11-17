@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
 
+<<<<<<< HEAD
     var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
     // Update the count down every 1 second
@@ -38,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
     }, 1000);
+=======
+
+>>>>>>> e5f3ad86689d8731a6aafcb0f85a56e43e3e4300
 
 })
 

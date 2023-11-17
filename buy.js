@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
         output.innerHTML = this.value;
     };
 
+<<<<<<< HEAD
 
 })
 
+=======
+})
+>>>>>>> e5f3ad86689d8731a6aafcb0f85a56e43e3e4300
