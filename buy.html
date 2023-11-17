@@ -2,30 +2,43 @@
 <html lang="en">
 
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Web App</title>
     <link rel="stylesheet" href="styles.css">
     <script src="buy.js"></script>
-    <script src="listings.js"></script>
-    <script src="helper_scripts/listingCards.js"></script>
-
 </head>
+
+
 
 
 <body>
 
-<div class="search-form">
-    <input type="text" id="searchInput" class="search-input" placeholder="Type item name" name="searchString">
-    <button id="search-button">Search</button>
-</div>
+
+
+
+
+
+
+
+</body>
 <div class="search-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Type item name">
+    <button onclick="performSearch()" class="search-button">Search</button>
+</div>
 <div class="filtercard">
     <div class="filter">
 
+
         <h2> Filters <img src="img/filter-symbol.png" alt="Funnel Icon" width="25 px"> </h2>
         <div class=" slidecontainer">
+
+
+
+
 
 
 
@@ -38,11 +51,17 @@
 
 
 
+
+
+
+
         </div>
         <br>
         <br>
         <div text align="left"> Condition </div>
         <div class="dropdown-container" text align="left">
+
+
 
 
             <select id="condition">
@@ -56,8 +75,14 @@
 
 
 
+
+
+
+
         <div text align="left"> Location </div>
         <div class="dropdown-container">
+
+
 
 
             <select id="location">
@@ -70,8 +95,12 @@
         </div>
 
 
+
+
         <div text align="left"> Payment Method </div>
         <div class="dropdown-container" text align="left">
+
+
 
 
             <select id="condition">
@@ -82,66 +111,77 @@
                 <option value="other"> Other</option>
 
 
+
+
             </select>
             <br>
             <br>
-            <button class="search-button" id="filter-button">Search</button>
+            <button onclick="performSearch()" class="search-button">Search</button>
+
+
 
 
         </div>
     </div>
 
-<!--    <div class="card">-->
-<!--        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>-->
-<!--        <div class="container">-->
-<!--            <h2 align="left"> UC Irvine Umbrella </h2>-->
-<!--            <h4 align="left"> $10 </h4>-->
-<!--            <h4 align="left"> On campus(dorms)</h4>-->
-<!--            &lt;!&ndash; <h5> Negotiable </h5>-->
-<!--        <h5> New</h5>-->
 
-<<<<<<< HEAD
-</div>
-
-
-=======
-<!--        <h5> Venmo </h5>-->
-<!--        <h5> ijena</h5>-->
-<!--        &ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="card">-->
-<!--        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>-->
-<!--        <div class="container">-->
-<!--            <h2 align="left"> UC Irvine Umbrella </h2>-->
-<!--            <h4 align="left"> $10 </h4>-->
-<!--            <h4 align="left"> On campus(dorms)</h4>-->
-<!--            &lt;!&ndash; <h5> Negotiable </h5>-->
-<!--        <h5> New</h5>-->
->>>>>>> 9a1e3db63f42b7d09c57f72550b0459ac124cdd4
-
-<!--        <h5> Venmo </h5>-->
-<!--        <h5> ijena</h5>-->
-<!--        &ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="card">-->
-<!--        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>-->
-<!--        <div class="container">-->
-<!--            <h2 align="left"> UC Irvine Umbrella </h2>-->
-<!--            <h4 align="left"> $10 </h4>-->
-<!--            <h4 align="left"> On campus(dorms)</h4>-->
-<!--            &lt;!&ndash; <h5> Negotiable </h5>-->
-<!--        <h5> New</h5>-->
-
-<!--        <h5> Venmo </h5>-->
-<!--        <h5> ijena</h5>-->
-<!--        &ndash;&gt;-->
-<!--        </div>-->
+    <div class="card">
+        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
+        <div class="container">
+            <h2 align="left"> UC Irvine Umbrella </h2>
+            <h4 align="left"> $10 </h4>
+            <h4 align="left"> On campus(dorms)</h4>
+            <!-- <h5> Negotiable </h5>
+        <h5> New</h5>
+       
+        <h5> Venmo </h5>
+        <h5> ijena</h5>
+        -->
+        </div>
     </div>
-    <div id="searchResultsContainer"></div>
+    <div class="card">
+        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
+        <div class="container">
+            <h2 align="left"> UC Irvine Umbrella </h2>
+            <h4 align="left"> $10 </h4>
+            <h4 align="left"> On campus(dorms)</h4>
+            <!-- <h5> Negotiable </h5>
+        <h5> New</h5>
+       
+        <h5> Venmo </h5>
+        <h5> ijena</h5>
+        -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/ZotShop_umbrella.jpg" alt="Umbrella" style="width: 100%;" , height=50%>
+        <div class="container">
+            <h2 align="left"> UC Irvine Umbrella </h2>
+            <h4 align="left"> $10 </h4>
+            <h4 align="left"> On campus(dorms)</h4>
+            <!-- <h5> Negotiable </h5>
+        <h5> New</h5>
+       
+        <h5> Venmo </h5>
+        <h5> ijena</h5>
+        -->
+        </div>
+    </div>
+
+
 </div>
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
