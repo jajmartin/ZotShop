@@ -9,11 +9,4 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.oninput = function () {
         output.innerHTML = this.value;
     };
-
-<<<<<<< HEAD
-
 })
-
-=======
-})
->>>>>>> e5f3ad86689d8731a6aafcb0f85a56e43e3e4300
