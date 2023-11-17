@@ -100,7 +100,7 @@ select {
 }
 
 
-.search-container {
+.search-form {
     text-align: center;
     margin: 50px;
 }
@@ -125,13 +125,14 @@ select {
 
 .filter {
     align-items: left;
-    width: 25%;
+    width: 100%;
     background-color: #1295D8;
     height: 1000px;
 }
 
 .filtercard {
     display: flex;
+    width: 25%;
 }
 
 .bid-container {
@@ -154,4 +155,35 @@ select {
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
+}
+
+#searchResultsContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    gap: 30px 50px;
+    margin: 10px;
+}
+
+.listingCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 250px;
+    height: 300px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    float: inline-start;
+    line-height: 5px;
+}
+
+.listingImg {
+    width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.search-container {
+    display: flex;
 }
