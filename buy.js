@@ -1,3 +1,14 @@
+function searchListings(searchString) {
+    let searchPattern = new RegExp(searchString.toLowerCase());
+    return listings.filter((listing) => {
+        return !listing['name'].toLowerCase().search(searchString.toLowerCase());
+    })
+}
+
+function populateSearch(searchString) {
+    return createListingsContainer(searchListings(searchString));
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Execute code after the DOM is fully loaded
     console.log('DOM Loaded');
@@ -9,4 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
     slider.oninput = function () {
         output.innerHTML = this.value;
     };
+
+    document.getElementById("search-button").addEventListener('click', () => {
+        let searchString = document.getElementById("searchInput").value;
+        document.getElementById("searchResults").append(populateSearch(searchString))
+    });
 })
+

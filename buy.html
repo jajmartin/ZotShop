@@ -8,18 +8,17 @@
     <title>Your Web App</title>
     <link rel="stylesheet" href="styles.css">
     <script src="buy.js"></script>
+    <script src="listings.js"></script>
+    <script src="helper_scripts/listingCards.js"></script>
+
 </head>
 
 
 <body>
 
-
-
-
-</body>
 <div class="search-container">
-    <input type="text" id="searchInput" class="search-input" placeholder="Type item name">
-    <button onclick="performSearch()" class="search-button">Search</button>
+    <input type="text" id="searchInput" class="search-input" placeholder="Type item name" name="searchString">
+    <button id="search-button">Search</button>
 </div>
 <div class="filtercard">
     <div class="filter">
@@ -99,7 +98,7 @@
             <h4 align="left"> On campus(dorms)</h4>
             <!-- <h5> Negotiable </h5>
         <h5> New</h5>
-       
+
         <h5> Venmo </h5>
         <h5> ijena</h5>
         -->
@@ -113,7 +112,7 @@
             <h4 align="left"> On campus(dorms)</h4>
             <!-- <h5> Negotiable </h5>
         <h5> New</h5>
-       
+
         <h5> Venmo </h5>
         <h5> ijena</h5>
         -->
@@ -127,15 +126,16 @@
             <h4 align="left"> On campus(dorms)</h4>
             <!-- <h5> Negotiable </h5>
         <h5> New</h5>
-       
+
         <h5> Venmo </h5>
         <h5> ijena</h5>
         -->
         </div>
     </div>
 
+    <div id="searchResults"></div>
 
-
+</body>
 
 
 
