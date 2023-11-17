@@ -1,5 +1,5 @@
 #newestBuyContainer{
-    margin: 50px 20px 80px;
+    margin: 30px 20px 80px;
 }
 
 h1 {
@@ -25,4 +25,10 @@ h1 {
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 5px;
+}
+
+#searchbar {
+    margin: 30px;
+    height: 30px;
+    width: 60%;
 }
