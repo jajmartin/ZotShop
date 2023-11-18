@@ -8,6 +8,14 @@ html {
     padding-top: 50px;
 }
 
+#zot {
+    color:#0064a4;
+}
+
+#shop {
+    color:#ffd200;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffd00018;
@@ -33,13 +41,10 @@ body {
     top: 0;
     width: 100%;
     margin-bottom: 0px;
-    background-color: #007BFF;
-    display: flex;
-    /* Use flexbox to center the links horizontally */
-    justify-content: center;
-    /* Center the links horizontally */
-    align-items: center;
-    /* Center the links vertically */
+    background-color: #0064a4;
+    display: flex;           /* Use flexbox to center the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+    align-items: center;     /* Center the links vertically */
 }
 
 /* Style rule set for individual li */
@@ -73,7 +78,7 @@ body {
 }
 
 h1 {
-    color: #007BFF;
+    color: #0064a4;
 }
 
 p {
@@ -91,8 +96,9 @@ p {
 
 .sale {
     position: relative;
-    border: 0.5px solid #007BFF;
-    border-radius: 8px;
+    background-color: white;
+    /* border: 0.5px solid #007BFF;
+    border-radius: 8px; */
     padding: 5px;
     margin: 10px;
     width: 200px;
@@ -115,7 +121,6 @@ p {
     height: auto;
     max-height: 70%;
     object-fit: contain;
-    border-radius: 5px;
 }
 
 .sale .itemContainer #itemPic {
@@ -165,9 +170,30 @@ p {
 
 button#editItem {
     font-size: 12px;
-    color: #007BFF;
+    color: #0064a4;
     display: inline-block;
+    background-color: aliceblue;
+    cursor: pointer;
+    width: 70px;
     /* margin-bottom: 1px; */
+}
+
+button#editItem:hover {
+    font-weight: bold;
+}
+
+button#editItem:disabled {
+    font-size: 12px;
+    color: #808080;
+    display: inline-block;
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+    border: none;
+    /* margin-bottom: 1px; */
+}
+
+button#editItem:disabled:hover {
+    font-weight: normal;
 }
 
 .modal {
@@ -180,18 +206,17 @@ button#editItem {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     /* flex-direction: column; */
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 
 .modal-content {
-
-    background-color: white;
-    /* update the colors and font sizes as you like */
-    color: black;
+    display: none;
+    background-color: #0064a4; /* update the colors and font sizes as you like */
+    color: #ffd200;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     padding: 20px;
     max-width: 80%;
     border-radius: 8px;
@@ -200,32 +225,73 @@ button#editItem {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
+    align-items:center;
+    justify-content: center;
     /* align-items: center; */
 }
 
-.modal-content #inputGroup {
+.modal-content .inputGroup {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
+    justify-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal-content .inputGroup select {
+    width: 96%;
+    font-size: 20px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    text-align: left;
+    margin-top: 5px;
+}
+
+.modal-content .inputGroup label {
+    width: 50%;
+    text-align: right;
+    margin-right: 5px;
 }
 
 .modal-content label {
     width: 225px;
     /* Adjust the width based on your design */
     box-sizing: border-box;
+<<<<<<< HEAD
     text-align: left;
     margin-right: 10px;
     /* Adjust the spacing between label and input */
+=======
+    text-align: right;
+>>>>>>> ZotShopMG
 }
 
-.modal-content input {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
+.modal-content .inputGroup input {
+    flex: 1;
+    font-size: 13px;
+    /* box-sizing: border-box; */
+    /* align-items:flex-start; */
+    text-align: left;
     margin: 5px 0;
 }
+
+.modal-content .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    color: #ffd200;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.error {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    background:pink;
+  }
