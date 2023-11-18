@@ -1,1 +1,1 @@
-# ZotShop
+ZotShop is a marketplace for second-hand items exclusively for UCI students. Security concerns are way lower regarding purchase of used goods since all users are UCI students who would log in with their UCI netID. You can post your own listings to sell items or also hold an auction in which the highest bidder would get the item. You can connect with the sellers via our messaging function too.
