@@ -2,6 +2,10 @@
     margin: 30px 20px 80px;
 }
 
+body {
+    background-color: #ffd00018;
+}
+
 h1 {
     color: black;
 }
