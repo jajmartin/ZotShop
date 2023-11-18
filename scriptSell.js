@@ -1,5 +1,21 @@
 function openEditModal(clickedButton) {
-    console.log("Button works!");
+    if (!clickedButton) {
+        document.getElementById("itemNameEdit").value = "";
+        document.getElementById("itemPriceEdit").value = ""
+        document.getElementById("itemLocEdit").value = "";
+
+        // Remove the "active" class to ensure proper styling
+        document.querySelector(".add-item-card").classList.remove("active");
+
+        // Show the modal
+        document.getElementById('editModal').style.display = 'block';
+        document.querySelector('.modal-content').style.display = 'flex';
+
+        // Return from the function since there's no item to process for "add"
+        return;
+    }
+
+    // console.log("Button works!");
     var item = clickedButton.closest('.sale');
 
     // Extracting the current item attributes
