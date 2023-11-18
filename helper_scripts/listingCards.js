@@ -5,7 +5,7 @@ function createListingCard(listing) {
     price.innerText = "$" + listing.price;
     let img = document.createElement('img');
     img.src = listing.img;
-    img.alt = 'item'
+    img.alt = 'Image of ' + listing.name;
     img.className = 'listingImg'
 
     let card = document.createElement('div');
