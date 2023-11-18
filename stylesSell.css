@@ -9,11 +9,11 @@ html {
 }
 
 #zot {
-    color:#0064a4;
+    color: #0064a4;
 }
 
 #shop {
-    color:#ffd200;
+    color: #ffd200;
 }
 
 body {
@@ -42,9 +42,12 @@ body {
     width: 100%;
     margin-bottom: 0px;
     background-color: #0064a4;
-    display: flex;           /* Use flexbox to center the links horizontally */
-    justify-content: center; /* Center the links horizontally */
-    align-items: center;     /* Center the links vertically */
+    display: flex;
+    /* Use flexbox to center the links horizontally */
+    justify-content: center;
+    /* Center the links horizontally */
+    align-items: center;
+    /* Center the links vertically */
 }
 
 /* Style rule set for individual li */
@@ -213,7 +216,8 @@ button#editItem:disabled:hover {
 
 .modal-content {
     display: none;
-    background-color: #0064a4; /* update the colors and font sizes as you like */
+    background-color: #0064a4;
+    /* update the colors and font sizes as you like */
     color: #ffd200;
     text-align: center;
     font-size: 16px;
@@ -227,7 +231,7 @@ button#editItem:disabled:hover {
     transform: translate(-50%, -50%);
     /* display: flex; */
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     /* align-items: center; */
 }
@@ -235,7 +239,7 @@ button#editItem:disabled:hover {
 .modal-content .inputGroup {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -261,13 +265,11 @@ button#editItem:disabled:hover {
     width: 225px;
     /* Adjust the width based on your design */
     box-sizing: border-box;
-<<<<<<< HEAD
-    text-align: left;
+    <<<<<<< HEAD text-align: left;
     margin-right: 10px;
     /* Adjust the spacing between label and input */
-=======
-    text-align: right;
->>>>>>> ZotShopMG
+    =======text-align: right;
+    >>>>>>>ZotShopMG
 }
 
 .modal-content .inputGroup input {
@@ -293,5 +295,5 @@ button#editItem:disabled:hover {
     border-style: solid;
     border-width: 2px;
     border-color: red;
-    background:pink;
-  }
+    background: pink;
+}

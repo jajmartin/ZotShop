@@ -40,21 +40,21 @@ function loginProcess() {
     return valid;
 }
 
-loginButton.addEventListener('click', function(event) {
+loginButton.addEventListener('click', function (event) {
     event.preventDefault();
     if (loginProcess()) {
-        window.location.href = 'buy.html';
+        window.location.href = 'index.html';
     }
 });
 
-emailField.addEventListener('input', function() {
+emailField.addEventListener('input', function () {
     if (validateEmail(emailField.value)) {
         emailField.style.borderColor = '';
         emailError.style.display = 'none';
     }
 });
 
-passwordField.addEventListener('input', function() {
+passwordField.addEventListener('input', function () {
     if (passwordField.value.trim() !== '') {
         passwordField.style.borderColor = '';
         passwordError.style.display = 'none';

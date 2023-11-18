@@ -116,6 +116,7 @@ select {
     font-size: 16px;
     width: 350px;
     border-radius: 15px;
+    align-items: center;
 }
 
 
@@ -125,18 +126,18 @@ select {
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
+    align-items: center;
 }
 
 .filter {
     align-items: left;
     width: 100%;
-    background-color: #1295D8;
+    background-color: #0064a4;
     height: 1000px;
 }
 
 .filtercard {
     display: flex;
-    width: 25%;
 }
 
 .bid-container {
@@ -190,4 +191,5 @@ select {
 
 .search-container {
     display: flex;
+    align-items: center;
 }

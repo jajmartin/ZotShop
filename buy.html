@@ -16,82 +16,83 @@
 
 <body>
 
-<div class="search-form">
-    <input type="text" id="searchInput" class="search-input" placeholder="Type item name" name="searchString">
-    <button id="search-button">Search</button>
-</div>
-<div class="search-container">
-    <div class="filtercard">
-        <div class="filter">
+    <div class="search-form">
+        <input type="text" id="searchInput" class="search-input" placeholder="Type item name" name="searchString">
+        <button id="search-button">Search</button>
+    </div>
+    <div class="search-container">
+        <div class="filtercard">
+            <div class="filter">
 
-            <h2> Filters <img src="img/filter-symbol.png" alt="Funnel Icon" width="25 px"> </h2>
-            <div class=" slidecontainer">
-
-
-
-
-                <br>
-                <div text align="left">Maximum Price</div>
-                <input type="range" min="1" max="500" value="100" class="slider" id="range">
-                <div text align="left">$<span id="value">100</span> </div>
+                <h2> Filters <img src="img/filter-symbol.png" alt="Funnel Icon" width="25 px"> </h2>
+                <div class=" slidecontainer">
 
 
 
 
-            </div>
-            <br>
-            <br>
-            <div text align="left"> Condition </div>
-            <div class="dropdown-container" text align="left">
-
-
-                <select id="condition">
-                    <option value="allcondition"> All </option>
-                    <option value="new"> New </option>
-                    <option value="barelyused"> Barely Used </option>
-                    <option value="used"> Used</option>
-                </select>
-            </div>
+                    <br>
+                    <div text align="left">Maximum Price</div>
+                    <input type="range" min="1" max="500" value="500" class="slider" id="range">
+                    <div text align="left">$<span id="value">100</span> </div>
 
 
 
 
-            <div text align="left"> Location </div>
-            <div class="dropdown-container">
-
-
-                <select id="location">
-                    <option value="alllocation"> All </option>
-                    <option value="dorms"> On campus (dorms) </option>
-                    <option value="acc"> On campus (apartments) </option>
-                    <option value="utc"> Off campus (Irvine)</option>
-                    <option value="city"> Off campus (outside Irvine)</option>
-                </select>
-            </div>
-
-
-            <div text align="left"> Payment Method </div>
-            <div class="dropdown-container" text align="left">
-
-
-                <select id="condition">
-                    <option value="allpayment"> All </option>
-                    <option value="cash"> Cash </option>
-                    <option value="venmo"> Venmo </option>
-                    <option value="zelle"> Zelle</option>
-                    <option value="other"> Other</option>
-
-
-                </select>
+                </div>
                 <br>
                 <br>
-                <button class="search-button" id="filter-button">Search</button>
+                <div text align="left"> Condition </div>
+                <div class="dropdown-container" text align="left">
 
 
+                    <select id="condition">
+                        <option value="allcondition"> All </option>
+                        <option value="new"> New </option>
+                        <option value="barelyused"> Barely Used </option>
+                        <option value="used"> Used</option>
+                    </select>
+                </div>
+
+
+
+
+                <div text align="left"> Location </div>
+                <div class="dropdown-container">
+
+
+                    <select id="location">
+                        <option value="alllocation"> All </option>
+                        <option value="dorms"> On campus (dorms) </option>
+                        <option value="acc"> On campus (apartments) </option>
+                        <option value="utc"> Off campus (Irvine)</option>
+                        <option value="city"> Off campus (outside Irvine)</option>
+                    </select>
+                </div>
+
+
+                <div text align="left"> Payment Method </div>
+                <div class="dropdown-container" text align="left">
+
+
+                    <select id="condition">
+                        <option value="allpayment"> All </option>
+                        <option value="cash"> Cash </option>
+                        <option value="venmo"> Venmo </option>
+                        <option value="zelle"> Zelle</option>
+                        <option value="other"> Other</option>
+
+
+                    </select>
+                    <br>
+                    <br>
+                    <button class="search-button" id="filter-button">Search</button>
+
+
+                </div>
             </div>
         </div>
+        <div id="searchResultsContainer"></div>
     </div>
-    <div id="searchResultsContainer"></div>
-</div>
 </body>
+
 </html>
