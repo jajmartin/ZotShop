@@ -5,15 +5,14 @@ let navItems = [
     {   'name':'Buy',
         'link': 'buy.html'
     },
-    {   'name':'Bids',
+    {   'name':'Biddings',
+        'link':'bid.html'
     },
     {   'name':'Sell',
         'link':'indexSell.html'
     },
     {   'name':'Messages',
-    },
-    {
-        'name': 'Location',
+        'link':'msg.html'
     },
     ]
 
